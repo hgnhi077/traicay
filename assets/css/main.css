@@ -1,0 +1,131 @@
+.header {
+    height: var(--header-height);
+    background-image: linear-gradient(0,#5ea52b,#65a03b);
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.header__navbar-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 8px 0 0 0;
+}
+
+.header__navbar-item {
+    margin: 0 8px;
+    position: relative;
+    min-height: 26px;
+}
+
+.header__navbar-item,
+.header__navbar-item-link {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--while-color);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.header__navbar-item,
+.header__navbar-item-link,
+.header__navbar-icon-link {
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.header__navbar-item:hover,
+.header__navbar-icon-link :hover,
+.header__navbar-item-link :hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header__navbar-item--strong {
+    font-weight: 400;
+}
+
+.header__navbar-item-separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid #bfcbb3;
+    height: 16px;
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__navbar-icon-link {
+    color: var(--while-color);
+    text-decoration: none;
+}
+
+.header__navbar-icon {
+    font-size: 1rem;
+    margin: 0 4px;
+}
+
+.header__navbar-item-litle--no-pointer {
+    cursor: text;
+    color: var(--while-color);
+}
+
+
+/*<!-- header-with-search -->*/
+.header-with-search {
+    height: var(--header-with-search-height);
+    display: flex;
+    align-items: center;
+
+}
+
+.header__menu {
+}
+
+.header__menu-icon {
+    font-size: 36px;
+    text-decoration: none;
+    color: var(--while-color);
+    
+}
+
+
+.header__search {
+    flex: 1;
+    height: 40px;
+    border-radius: 3px;
+    background-color: var(--while-color);
+}
+
+
+/* Định dạng chung cho các icon và văn bản */
+.header__menu-icon,
+.header__phone-icon,
+.header__user-icon,
+.header__cart-icon  {
+    display: flex;
+    flex-direction: column; /* Đặt các phần tử theo chiều dọc */
+    align-items: center;     /* Căn giữa theo chiều ngang */
+    text-decoration: none;   /* Bỏ gạch chân của liên kết */
+    color: white;            /* Đặt màu chữ */
+}
+
+.header__menu-icon i, 
+.header__phone-icon i,
+.header__user-icon i,
+.header__cart-icon i {
+    font-size: 24px;         /* Kích thước icon */
+}
+
+.header__menu-icon span,
+.header__phone-icon span,
+.header__user-icon span,
+.header__cart-icon span {
+    margin-top: 5px;         /* Khoảng cách giữa icon và chữ */
+    font-size: 14px;         /* Điều chỉnh kích thước chữ */
+}
+
+
